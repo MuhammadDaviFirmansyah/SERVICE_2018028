@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="75dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="310dp"
+                android:layout_height="310dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/suityan" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Template - Hoshimachi Suisei"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="35dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:background="@color/ao"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/pause"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:background="@android:drawable/ic_media_pause"
+            android:backgroundTint="#8E4B4B"
+            android:onClick="musicpause" />
+
+        <Button
+            android:id="@+id/start"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="75dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_play_circle_outline_24"
+            android:onClick="musicplay" />
+
+        <Button
+            android:id="@+id/stop"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_disabled_by_default_24"
+            android:onClick="musicstop" />
+    </LinearLayout>
+</LinearLayout>
